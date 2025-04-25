@@ -25,7 +25,7 @@ export default function Home() {
           Welcome to My Portfolio
         </motion.h1>
         <motion.p className="mt-4 text-gray-400 text-lg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.8 }}>
-          I’m a developer who loves building modern web applications.
+          I’m a developer who loves building modern web applications and Desktop.
         </motion.p>
       </section>
 
