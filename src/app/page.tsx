@@ -229,6 +229,31 @@ export default function Home() {
               development skills.
             </p>
           </div>
+
+          {/* POS Cafe Project */}
+          <div className="bg-gray-800 rounded-lg p-6 shadow hover:shadow-xl transition">
+            {/* Video YouTube */}
+            <div className="mb-4">
+              <iframe
+                width="100%"
+                height="200"
+                src={`https://www.youtube.com/embed/YOUR_VIDEO_ID_POS_CAFE`} // Ganti dengan ID YouTube POS Cafe
+                title="POS Cafe"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            {/* Project Title */}
+            <h3 className="text-xl font-semibold mb-2">POS Dekstop</h3>
+
+            {/* Project Description */}
+            <p className="text-gray-400">
+              This project is a pos dekstop management system that integrates sales and
+              inventory management features.
+            </p>
+          </div>
         </div>
       </section>
 
