@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* ✅ HOME SECTION */}
       <section id="home" className="scroll-mt-24 pt-24 text-center px-6 min-h-screen flex flex-col justify-center">
-        <motion.h1 className="text-5xl font-bold text-gradient bg-clip-text text-transparent" initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <motion.h1 className="text-5xl font-bold text-gradient bg-clip-text text-transparent text-white" initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           Welcome to My Portfolio
         </motion.h1>
         <motion.p className="mt-4 text-gray-400 text-lg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.8 }}>
@@ -41,29 +41,28 @@ export default function Home() {
       <section id="skills" className="scroll-mt-24 pt-24 px-6 py-20 bg-gray-800">
         <h2 className="text-3xl font-bold mb-6 text-center">Skills</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Desktop Application */}
+          <div className="bg-gray-700 rounded-lg p-6 shadow-lg">
+            <h3 className="text-xl font-semibold mb-2">Desktop Application</h3>
+            <p className="text-gray-400">C#</p>
+          </div>
+          
+          {/* Web Development */}
           <div className="bg-gray-700 rounded-lg p-6 shadow-lg">
             <h3 className="text-xl font-semibold mb-2">Web Development</h3>
-            <p className="text-gray-400">React, Next.js, Tailwind CSS, Node.js</p>
+            <p className="text-gray-400">Laravel, PHP, Node.js, Next.js</p>
           </div>
+          
+          {/* Mobile Development */}
           <div className="bg-gray-700 rounded-lg p-6 shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Backend Development</h3>
-            <p className="text-gray-400">Express.js, MongoDB, SQL, REST APIs</p>
+            <h3 className="text-xl font-semibold mb-2">Mobile Development</h3>
+            <p className="text-gray-400">Flutter, Kotlin, Android Studio</p>
           </div>
+          
+          {/* RESTful API */}
           <div className="bg-gray-700 rounded-lg p-6 shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Version Control</h3>
-            <p className="text-gray-400">Git, GitHub, GitLab</p>
-          </div>
-          <div className="bg-gray-700 rounded-lg p-6 shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
-            <p className="text-gray-400">Figma, Adobe XD, User-Centered Design</p>
-          </div>
-          <div className="bg-gray-700 rounded-lg p-6 shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Cloud Services</h3>
-            <p className="text-gray-400">AWS, Google Cloud Platform, Heroku</p>
-          </div>
-          <div className="bg-gray-700 rounded-lg p-6 shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">Other Skills</h3>
-            <p className="text-gray-400">Docker, CI/CD, Testing, Agile</p>
+            <h3 className="text-xl font-semibold mb-2">RESTful API</h3>
+            <p className="text-gray-400">Lumen</p>
           </div>
         </div>
       </section>
