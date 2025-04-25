@@ -250,8 +250,8 @@ export default function Home() {
 
             {/* Project Description */}
             <p className="text-gray-400">
-              This project is a pos dekstop management system that integrates sales and
-              inventory management features.
+              This project is a pos dekstop management system that integrates
+              sales and inventory management features.
             </p>
           </div>
         </div>
@@ -265,8 +265,19 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
         <p className="text-gray-300">
           Reach out via email:{" "}
-          <a href="mailto:you@example.com" className="text-blue-400 underline">
+          <a href="mailto:hengkycode@gmail.com" className="text-blue-400 underline">
             hengkycode@gmail.com
+          </a>
+        </p>
+        <p className="text-gray-300 mt-4">
+          Or message me on WhatsApp:{" "}
+          <a
+            href="https://wa.me/628215876677"
+            className="text-green-400 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            082158766777
           </a>
         </p>
       </section>
