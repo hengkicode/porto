@@ -8,7 +8,7 @@ export default function Home() {
       {/* ✅ NAVBAR */}
       <nav className="sticky top-0 z-50 bg-gray-950 bg-opacity-90 backdrop-blur shadow-md">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-xl font-bold">MyPortfolio</div>
+          <div className="text-xl font-bold">Hengki Candra</div>
           <ul className="flex space-x-6 text-gray-300">
             <li><a href="#home" className="hover:text-white">Home</a></li>
             <li><a href="#about" className="hover:text-white">About</a></li>
