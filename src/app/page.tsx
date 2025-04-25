@@ -125,19 +125,106 @@ export default function Home() {
       {/* ✅ PROJECTS SECTION */}
       <section id="projects" className="scroll-mt-24 pt-24 px-6 py-20">
         <h2 className="text-3xl font-bold mb-4 text-center">Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-6xl mx-auto">
-          {[1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className="bg-gray-800 rounded-lg p-6 shadow hover:shadow-xl transition"
-            >
-              <h3 className="text-xl font-semibold mb-2">Project {i}</h3>
-              <p className="text-gray-400">
-                This is a description of project {i}. It showcases some skills
-                and tools I’ve used.
-              </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8 max-w-6xl mx-auto">
+          {/* POSK Project */}
+          <div className="bg-gray-800 rounded-lg p-6 shadow hover:shadow-xl transition">
+            {/* Video YouTube */}
+            <div className="mb-4">
+              <iframe
+                width="100%"
+                height="200"
+                src={`https://www.youtube.com/embed/YOUR_VIDEO_ID_POSK`} // Ganti dengan ID YouTube POSK
+                title="POSK"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
-          ))}
+
+            {/* Project Title */}
+            <h3 className="text-xl font-semibold mb-2">POSK</h3>
+
+            {/* Project Description */}
+            <p className="text-gray-400">
+              This is a POSK project, showcasing a modern point-of-sale system
+              designed for efficient operations.
+            </p>
+          </div>
+
+          {/* POS Cafe Project */}
+          <div className="bg-gray-800 rounded-lg p-6 shadow hover:shadow-xl transition">
+            {/* Video YouTube */}
+            <div className="mb-4">
+              <iframe
+                width="100%"
+                height="200"
+                src={`https://www.youtube.com/embed/YOUR_VIDEO_ID_POS_CAFE`} // Ganti dengan ID YouTube POS Cafe
+                title="POS Cafe"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            {/* Project Title */}
+            <h3 className="text-xl font-semibold mb-2">POS Cafe</h3>
+
+            {/* Project Description */}
+            <p className="text-gray-400">
+              This project is a cafe management system that integrates sales and
+              inventory management features.
+            </p>
+          </div>
+
+          {/* Klinik Project */}
+          <div className="bg-gray-800 rounded-lg p-6 shadow hover:shadow-xl transition">
+            {/* Video YouTube */}
+            <div className="mb-4">
+              <iframe
+                width="100%"
+                height="200"
+                src={`https://www.youtube.com/embed/YOUR_VIDEO_ID_KLINIK`} // Ganti dengan ID YouTube Klinik
+                title="Klinik"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            {/* Project Title */}
+            <h3 className="text-xl font-semibold mb-2">Klinik</h3>
+
+            {/* Project Description */}
+            <p className="text-gray-400">
+              Klinik project for managing patient information, appointments, and
+              healthcare services.
+            </p>
+          </div>
+
+          {/* Website Project */}
+          <div className="bg-gray-800 rounded-lg p-6 shadow hover:shadow-xl transition">
+            {/* Video YouTube */}
+            <div className="mb-4">
+              <iframe
+                width="100%"
+                height="200"
+                src={`https://www.youtube.com/embed/YOUR_VIDEO_ID_WEBSITE`} // Ganti dengan ID YouTube Website
+                title="Website"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            {/* Project Title */}
+            <h3 className="text-xl font-semibold mb-2">Website</h3>
+
+            {/* Project Description */}
+            <p className="text-gray-400">
+              A responsive website designed for a portfolio, showcasing web
+              development skills.
+            </p>
+          </div>
         </div>
       </section>
 
