@@ -8,7 +8,7 @@ export default function Home() {
       {/* ✅ NAVBAR */}
       <nav className="sticky top-0 z-50 bg-gray-950 bg-opacity-90 backdrop-blur shadow-md">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-xl font-bold text-gradient bg-clip-text text-transparent">
+          <div className="text-xl font-bold text-gradient text-white bg-clip-text text-transparent">
             Hengki Candra
           </div>
           <ul className="flex space-x-6 text-gray-300">
@@ -44,18 +44,22 @@ export default function Home() {
       {/* ✅ HOME SECTION */}
       <section
         id="home"
-        className="scroll-mt-24 pt-24 text-center px-6 min-h-screen flex flex-col justify-center"
+        className="scroll-mt-24 pt-24 text-center px-6 min-h-screen flex flex-col justify-center relative overflow-hidden"
       >
+        {/* Background Animation */}
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-30 animate-pulse"></div>
+
         <motion.h1
-          className="text-5xl font-bold text-gradient bg-clip-text text-transparent text-white"
+          className="text-5xl font-bold text-gradient bg-clip-text text-transparent text-white relative z-10"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           Welcome to My Portfolio
         </motion.h1>
+
         <motion.p
-          className="mt-4 text-gray-400 text-lg"
+          className="mt-4 text-gray-400 text-lg relative z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
