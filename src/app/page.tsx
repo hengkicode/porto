@@ -110,6 +110,15 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-2">DevOps</h3>
             <p className="text-gray-400">Jenkins2, Kafka</p>
           </div>
+
+          {/* Compute Architecture */}
+          <div className="bg-gray-700 rounded-lg p-6 shadow-lg">
+            <h3 className="text-xl font-semibold mb-2">Compute Architecture</h3>
+            <p className="text-gray-400">
+              Cloud Architecture, Distributed Systems, High-Performance
+              Computing (HPC), Infrastructure as Code (IaC)
+            </p>
+          </div>
         </div>
       </section>
 
