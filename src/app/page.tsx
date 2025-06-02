@@ -137,7 +137,7 @@ export default function Home() {
               <iframe
                 width="100%"
                 height="200"
-                src={`https://www.youtube.com/embed/YOUR_VIDEO_ID_POSK`} // Ganti dengan ID YouTube POSK
+                src={`https://youtu.be/dftHoBKXkK4`} // Ganti dengan ID YouTube POSK
                 title="POSK"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
