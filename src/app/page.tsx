@@ -135,13 +135,14 @@ export default function Home() {
             {/* Video YouTube */}
             <div className="mb-4">
               <iframe
-                width="100%"
-                height="200"
-                src={`https://youtu.be/dftHoBKXkK4`} // Ganti dengan ID YouTube POSK
-                title="POSK"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/dftHoBKXkK4?si=EIUC37aTEjKx3uTy"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
               ></iframe>
             </div>
 
@@ -265,7 +266,10 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
         <p className="text-gray-300">
           Reach out via email:{" "}
-          <a href="mailto:hengkycode@gmail.com" className="text-blue-400 underline">
+          <a
+            href="mailto:hengkycode@gmail.com"
+            className="text-blue-400 underline"
+          >
             hengkycode@gmail.com
           </a>
         </p>
