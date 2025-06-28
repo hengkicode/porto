@@ -67,6 +67,19 @@ export default function Home() {
           I’m a developer who loves building modern web applications and
           Desktop.
         </motion.p>
+
+        <motion.div
+          className="mt-8 relative z-10 flex justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.8 }}
+        >
+          <img
+            src="/profile.jpg"
+            alt="Hengki Candra"
+            className="w-60 h-60 rounded-full border-4 border-white shadow-lg"
+          />
+        </motion.div>
       </section>
 
       {/* ✅ ABOUT SECTION */}
@@ -265,7 +278,10 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
         <p className="text-gray-300">
           Reach out via email:{" "}
-          <a href="mailto:hengkycode@gmail.com" className="text-blue-400 underline">
+          <a
+            href="mailto:hengkycode@gmail.com"
+            className="text-blue-400 underline"
+          >
             hengkycode@gmail.com
           </a>
         </p>
