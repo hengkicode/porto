@@ -450,6 +450,42 @@ export default function Home() {
               </h4>
               <p className="text-gray-400 text-sm">Issued by MySkill</p>
             </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/myskilluserinterface.jpg"
+                alt="MySkill Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                User Interface Design
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by MySkill</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/myskillsql.jpg"
+                alt="MySkill Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Sql For Data Analysis
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by MySkill</p>
+            </div>
+
+             <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/myskilldatascience.jpg"
+                alt="MySkill Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Data Science
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by MySkill</p>
+            </div>
           </div>
         </div>
 
