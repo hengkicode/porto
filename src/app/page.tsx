@@ -1,17 +1,96 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white scroll-smooth">
       {/* ✅ NAVBAR */}
-      <nav className="sticky top-0 z-50 bg-gray-950 bg-opacity-90 backdrop-blur shadow-md">
+      <nav className="sticky top-0 z-50 bg-gradient-to-r from-gray-900 to-gray-950 bg-opacity-90 backdrop-blur shadow-md">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-xl font-bold text-gradient text-white bg-clip-text text-transparent">
-            Hengki Candra
-          </div>
-          <ul className="flex space-x-6 text-gray-300">
+          <div className="text-xl font-bold text-white">Hengki Candra</div>
+
+          {/* Toggle Button */}
+          <button
+            className="md:hidden text-white focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? (
+              <svg
+                className="w-8 h-8 text-purple-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-8 h-8 text-purple-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex space-x-8 text-gray-300 font-semibold">
+            <li>
+              <a href="#home" className="hover:text-white">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-white">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#skills" className="hover:text-white">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#certificates" className="hover:text-white">
+                Certificates
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="hover:text-white">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-white">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            menuOpen ? "max-h-60 opacity-100 py-4" : "max-h-0 opacity-0 py-0"
+          } overflow-hidden bg-gray-950`}
+        >
+          <ul className="flex flex-col space-y-4 text-center text-gray-300 font-semibold">
             <li>
               <a href="#home" className="hover:text-white">
                 Home
@@ -137,6 +216,262 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* ✅ CERTIFICATES SECTION */}
+      <section
+        id="certificates"
+        className="scroll-mt-24 pt-24 px-6 py-20 bg-gray-800 text-center"
+      >
+        <h2 className="text-3xl font-bold mb-4">Certificates</h2>
+        <p className="text-gray-300 mb-8">
+          These are some of my professional certifications, categorized by
+          platform.
+        </p>
+
+        {/* ✅ Facebook Certificates */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold mb-6 text-purple-400">Facebook</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb1.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Bagaimana Saya Dikenal Biaya Untuk Akun Facebook Saya
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb2.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Bangun Merek Anda dengan Iklan Video
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb3.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Facebook untuk Marketer B2B
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb4.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Enchance Your Direct Response Campaigns With Audienece Network
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb5.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                OnBoarding Pengelola Monetisasi
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb6.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Ads in Instagram Store
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb7.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Ads in Instagram Stories
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb8.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Penyampaian Certia Imersif dengan Artikel Instan
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb9.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Cara Jurnalis Dapat Memaksimalkan Penggunaan Facebook dan
+                instagram
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb10.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Meta Front-End Developer
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/fb11.jpg"
+                alt="Facebook Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Meta Front-End Developer
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Facebook (Meta)</p>
+            </div>
+            {/* Tambah lagi kalau ada */}
+          </div>
+        </div>
+
+        {/* ✅ Udemy Certificates */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold mb-6 text-green-400">Udemy</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/udemy.jpg"
+                alt="Udemy Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Facebook Ads Fundations
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Udemy</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/udemy2.jpg"
+                alt="Udemy Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                After Effects CC for Beginners
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Udemy</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/udemy3.jpg"
+                alt="Udemy Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                CyberCriminals Want Your Information: stop them cold!
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Udemy</p>
+            </div>
+          </div>
+        </div>
+
+        {/* ✅ MySkill Certificates */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold mb-6 text-yellow-400">MySkill</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/myskill.jpg"
+                alt="MySkill Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Website Development Fundamental
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by MySkill</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/myskill2.jpg"
+                alt="MySkill Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Frontend - React
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by MySkill</p>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/myskillnode.jpg"
+                alt="MySkill Certificate"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Backend - Node.js
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by MySkill</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold mb-6 text-white-400">Cybrary</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-gray-700 rounded-lg p-4 shadow-lg">
+              <img
+                src="/sertifikat/cynetwork.jpg"
+                alt="Network Fundamentals"
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-xl font-semibold text-white">
+                Network Fundamentals
+              </h4>
+              <p className="text-gray-400 text-sm">Issued by Cybrary</p>
+            </div>
+          </div>
+        </div>
+
+        {/* ✅ Tambah Kategori Lain */}
+        {/* Bisa buat kategori tambahan sesuai kebutuhan */}
       </section>
 
       {/* ✅ PROJECTS SECTION */}
